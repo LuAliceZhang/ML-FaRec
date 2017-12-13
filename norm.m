@@ -1,0 +1,11 @@
+clc,clear
+w=zeros(4,6);
+w=0.125*[1,sqrt(2),sqrt(2),sqrt(2),1,1;
+  -1,sqrt(2),-sqrt(2),sqrt(2),-1,-1;
+  -1,-sqrt(2),sqrt(2),sqrt(2),-1,-1;
+  1,-sqrt(2),-sqrt(2),sqrt(2),1,1]
+ww=sum(w);
+n=1/norm(ww,2);
+x=0.6^5*0.4^5;
+x2=0.5^10;
+y=x/(x+x2);
